@@ -11,8 +11,7 @@ const HeroPic = () => {
       viewport={{ once: false, amount: 0 }}
       className=" h-full flex items-center justify-center "
     >
-      <img src="C:\Users\Venkata Krishna\OneDrive\Desktop\AQPortfolio-main\src\assets\pic.jpg" alt="Yashwanth K" className="max-h-[450px] w-auto"/>
-
+      <img src="../../src/assets/pic.jpg" alt="Yashwanth K" className="max-h-[450px] w-auto"/>
       <div className=" absolute -z-10 flex justify-center items-center animate-pulse ">
         <PiHexagonThin className=" md:h-[90%] sm:h-[120%] min-h-[600px] w-auto text-cyan blur-md animate-[spin_20s_linear_infinite] " />
       </div>
