@@ -4,14 +4,12 @@ const ExperienceTopRight = () => {
       <p className="text-lg text-center text-lightGrey">
         I specialize in{" "}
         <span className="font-bold text-white">
-          React and modern JavaScript
+          AI Engineering and Data Science
         </span>
-        , leveraging best practices to create scalable and maintainable
-        solutions. <br />
-        My experience spans working on diverse projects, from small business
-        websites to{" "}
-        <span className="font-bold text-white">complex front-end systems</span>,
-        always aiming for clean code and exceptional user experiences.
+        , leveraging machine learning and data-driven solutions to solve real-world problems. <br />
+        My experience spans working on diverse projects, from predictive models to{" "}
+        <span className="font-bold text-white">scalable AI systems</span>,
+        always focusing on building intelligent systems that enhance user experiences.
       </p>
     </div>
   );
