@@ -1,47 +1,78 @@
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaJava, FaGithub } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiTypescript } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
-import { SiRedux } from "react-icons/si";
-import { SiNextdotjs } from "react-icons/si";
+import { SiTypescript, SiRedux, SiNextdotjs, SiMongodb, SiTensorflow} from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { GiArtificialIntelligence } from "react-icons/gi";
+import { BiBrain } from "react-icons/bi";
+import { PiChartLineUpBold } from "react-icons/pi";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
 const skills = [
   {
+     skill: "Python",
+      icon: FaPython, 
+  },
+  { 
+    skill: "Java", 
+    icon: FaJava ,
+  },
+  { 
     skill: "HTML",
-    icon: FaHtml5,
-  },
-  {
+     icon: FaHtml5,
+ },
+  { 
     skill: "CSS",
-    icon: FaCss3Alt,
+     icon: FaCss3Alt, 
   },
-  {
+  { 
     skill: "JavaScript",
-    icon: IoLogoJavascript,
+     icon: IoLogoJavascript,
   },
-  {
+  { 
     skill: "TypeScript",
     icon: SiTypescript,
-  },
-  {
+ },
+  { 
     skill: "ReactJS",
-    icon: FaReact,
+     icon: FaReact ,
   },
-  {
+  { 
     skill: "Redux",
-    icon: SiRedux,
-  },
-  {
+     icon: SiRedux ,
+    },
+  { 
     skill: "NextJS",
-    icon: SiNextdotjs,
-  },
-  {
+     icon: SiNextdotjs,
+     },
+  { 
     skill: "TailwindCSS",
-    icon: RiTailwindCssFill,
-  },
+     icon: RiTailwindCssFill,
+     },
+  { 
+    skill: "Machine Learning",
+     icon: BiBrain,
+     },
+  { 
+    skill: "Deep Learning",
+     icon: SiTensorflow,
+     },
+  { 
+    skill: "AI",
+     icon: GiArtificialIntelligence,
+     },
+  { 
+    skill: "Data Analysis",
+     icon: PiChartLineUpBold,
+     },
+  { 
+    skill: "MongoDB",
+     icon: SiMongodb, 
+    },
+  { 
+    skill: "GitHub",
+     icon: FaGithub,
+     },
 ];
 
 const AllSkillsSM = () => {

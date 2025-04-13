@@ -1,16 +1,27 @@
 import SingleSkill from "./SingleSkill";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
+
+import { FaPython, FaJava, FaHtml5, FaCss3Alt, FaReact, FaGithub } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiTypescript } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
-import { SiRedux } from "react-icons/si";
-import { SiNextdotjs } from "react-icons/si";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { SiMongodb, SiTensorflow } from "react-icons/si";
+import { GiArtificialIntelligence } from "react-icons/gi";
+import { BiBrain } from "react-icons/bi";
+import { PiChartLineUpBold } from "react-icons/pi";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
 const skills = [
+  {
+    skill: "Python",
+    icon: FaPython,
+  },
+  {
+    skill: "Java",
+    icon: FaJava,
+  },
+  {
+    skill: "JavaScript",
+    icon: IoLogoJavascript,
+  },
   {
     skill: "HTML",
     icon: FaHtml5,
@@ -20,52 +31,54 @@ const skills = [
     icon: FaCss3Alt,
   },
   {
-    skill: "JavaScript",
-    icon: IoLogoJavascript,
-  },
-  {
-    skill: "TypeScript",
-    icon: SiTypescript,
-  },
-  {
     skill: "ReactJS",
     icon: FaReact,
   },
   {
-    skill: "Redux",
-    icon: SiRedux,
+    skill: "Machine Learning",
+    icon: BiBrain,
   },
   {
-    skill: "NextJS",
-    icon: SiNextdotjs,
+    skill: "Deep Learning",
+    icon: SiTensorflow,
   },
   {
-    skill: "TailwindCSS",
-    icon: RiTailwindCssFill,
+    skill: "AI",
+    icon: GiArtificialIntelligence,
   },
+  {
+    skill: "Data Analysis",
+    icon: PiChartLineUpBold,
+  },
+  {
+    skill: "MongoDB",
+    icon: SiMongodb,
+  },
+  {
+    skill: "GitHub",
+    icon: FaGithub,
+  }, 
 ];
 
 const AllSkills = () => {
   return (
     <div>
-      <div className="flex items-center justify-center relative gap-2 max-w-[1200px] mx-auto">
-        {skills.map((item, index) => {
-          return (
-            <motion.div
-              variants={fadeIn("up", `0.${index}`)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0 }}
+      <div className="flex flex-wrap justify-center items-center gap-4 max-w-[1200px] mx-auto">
+        {skills.map((item, index) => (
+          <motion.div
+            variants={fadeIn("up", `0.${index}`)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0 }}
+            key={index}
+          >
+            <SingleSkill
               key={index}
-            >
-              <SingleSkill
-                key={index}
-                text={item.skill}
-                imgSvg={<item.icon />}
-              />
-            </motion.div>
-          );
-        })}
+              text={item.skill}
+              imgSvg={<item.icon />}
+            />
+          </motion.div>
+        ))}
       </div>
     </div>
   );

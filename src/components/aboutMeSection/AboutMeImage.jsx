@@ -3,8 +3,8 @@ const AboutMeImage = () => {
     <div className="h-[500px] w-[300px] relative">
       <div className="h-[500px] w-[300px] rounded-[100px] absolute overflow-hidden">
         <img
-          src="../../public/images/about-me.jpg"
-          alt="About Me Image"
+          src="/assets/profile.jpg.jpg"
+          alt="About Me - Yashwanth"
           className="h-full w-auto object-cover"
         />
       </div>
