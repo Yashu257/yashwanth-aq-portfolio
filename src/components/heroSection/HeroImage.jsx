@@ -7,8 +7,8 @@ const HeroImage = () => {
       <img src="pic.jpg"
 
           alt="Yashwanth K"
-          className="w-full h-full object-cover 
-          [clip-path:polygon(25%_6.7%,75%_6.7%,100%_50%,75%_93.3%,25%_93.3%,0%_50%)]"        />
+          className="w-auto h-auto md:max-w-[570px] sm:max-w-[380px] absolute bottom-[0px] z-10 left-[50%] -translate-x-[50%]"
+        />
         <div className="w-full h-full absolute  bottom-[-20%] -z-10 flex justify-center items-center rotate-90">
           <PiHexagonThin className=" md:h-[90%] sm:h-[120%] min-h-[600px] w-auto text-orange opacity-70  animate-[spin_20s_linear_infinite] " />
         </div>
