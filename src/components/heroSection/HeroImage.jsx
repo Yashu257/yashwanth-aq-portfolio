@@ -4,7 +4,7 @@ const HeroImage = () => {
   return (
     <div className="relative self-end h-full w-full items-center justify-center">
       <div className="h-full w-full">
-      <img src="naa.png"
+      <img src="u.png"
 
           alt="Yashwanth K"
           className="w-[320px] sm:w-[380px] md:w-[500px] lg:w-[570px] hexagon-mask absolute bottom-[0px] z-10 left-[50%] -translate-x-[50%]"
