@@ -7,7 +7,7 @@ const HeroImage = () => {
       <img src="u.png"
 
           alt="Yashwanth K"
-          className="w-[320px] sm:w-[380px] md:w-[500px] lg:w-[570px] hexagon-mask absolute bottom-[0px] z-10 left-[50%] -translate-x-[50%]"
+          className="w-[260px] sm:w-[300px] md:w-[360px] lg:w-[400px] hexagon-mask absolute bottom-[0px] z-10 left-[50%] -translate-x-[50%] object-cover"
           />
         <div className="w-full h-full absolute  bottom-[-20%] -z-10 flex justify-center items-center rotate-90">
           <PiHexagonThin className=" md:h-[90%] sm:h-[120%] min-h-[600px] w-auto text-orange opacity-70  animate-[spin_20s_linear_infinite] " />

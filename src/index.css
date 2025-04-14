@@ -6,15 +6,14 @@
 body {
   @apply bg-darkBrown;
 }
-/* index.css */
 .hexagon-mask {
   clip-path: polygon(
-    25% 6%,
-    75% 6%,
-    100% 50%,
-    75% 94%,
-    25% 94%,
-    0% 50%
+    26% 8%,
+    74% 8%,
+    98% 50%,
+    74% 92%,
+    26% 92%,
+    2% 50%
   );
   overflow: hidden;
 }
