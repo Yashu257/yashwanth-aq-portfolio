@@ -24,8 +24,8 @@ function App() {
       <ExperienceMain />
       <ProjectsMain />
       <ContactMeMain />
-      <FooterMain />
       <TalkToMe />
+      <FooterMain />
 
     </main>
   );
