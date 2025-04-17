@@ -23,8 +23,8 @@ function App() {
       <SubSkills />
       <ExperienceMain />
       <ProjectsMain />
-      <ContactMeMain />
       <TalkToMe />
+      <ContactMeMain />
       <FooterMain />
 
     </main>
